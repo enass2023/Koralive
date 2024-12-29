@@ -1,0 +1,290 @@
+.sadebar {
+    width: 200px;
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(246, 255, 246);
+    box-shadow: 2px 4px 8px #00000013;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.sadebar ul {
+    list-style: none;
+    margin-left: -20px;
+}
+
+.btn-primary {
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background: #1db84b;
+    color: #fff;
+    box-shadow: 2px 4px 16px #00000011;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background: #fff;
+    color: #1db84b;
+    border: 1px solid #1db84b;
+    box-shadow: 2px 4px 16px #00000027;
+
+}
+
+.sadebar ul li {
+    margin-top: 16px;
+    font-size: 1.4rem;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.sadebar ul li:hover {
+    margin-left: 5px;
+    color: #0cd638;
+}
+
+section {
+    margin-left: 200px;
+    padding: 20px;
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+section h1 {
+    font-size: 2rem;
+}
+
+
+
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: #fdfdfd63;
+    backdrop-filter: blur(16px);
+}
+
+#deletePopup {
+    display: none;
+}
+
+.popup.deletePopup .contener {
+    padding: 20px;
+    width: 30%;
+    min-height: 30vh;
+    margin-top: 200px;
+    margin-left: 400px;
+}
+
+.popup.deletePopup .contener h1 {
+    color: #fa1010;
+}
+
+.popup.deletePopup .contener .btn:nth-child(2) {
+    margin-left: 16px;
+}
+
+.popup .contener {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 200px;
+    border: 2px solid #1db84b;
+    width: 70%;
+    min-height: 70vh;
+    background-color: #f6fdf5;
+    overflow: hidden;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.popup form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 0 5rem;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    transition: 0.2s 0.7s ease-in-out;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.signin_signgup h2 {
+    font-size: 2.2rem;
+    margin: 20px;
+}
+
+.popup form.sign_in {
+    z-index: 2;
+}
+
+.popup .title {
+    font-size: 2.2rem;
+    color: #041f01;
+    margin-bottom: 10px;
+}
+
+.popup .input_field {
+    max-width: 300px;
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.popup .input_field i {
+    text-align: center;
+    line-height: 55px;
+    color: var(--color-2);
+    font-size: 1.1rem;
+}
+
+.popup .input_field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.popup .input_field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+}
+
+.popup .btn {
+    width: 150px;
+    height: 49px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #1db84b;
+    border-radius: 8px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: 0.5s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    text-decoration: none;
+}
+
+.popup .btn:hover {
+    background-color: #0cd638;
+}
+
+
+.popup .btn.btn-danger {
+    background-color: #fa1010;
+}
+
+.popup .btn.btn-danger:hover {
+    background-color: #fa4710;
+}
+
+.popup .btn.btn-secondery {
+    background-color: #d3d3d3;
+}
+
+.popup .btn.btn-secondery:hover {
+    background-color: #a1a1a1;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tbl-header {
+    background-color: rgba(50, 165, 21, 0.548);
+}
+
+.tbl-content {
+    height: 400px;
+    overflow-x: auto;
+    margin-top: 0px;
+    border: 1px solid rgba(50, 165, 21, 0.548);
+}
+
+.tbl-content i {
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+
+}
+
+.tbl-content i:hover {
+
+    color: #0cd638;
+}
+
+th {
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: #000000;
+    border-bottom: solid 1px rgba(70, 70, 70, 0.144);
+}
